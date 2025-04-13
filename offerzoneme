@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎁 You've Been Selected!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .container {
+      background: #ffffff;
+      color: #333;
+      max-width: 420px;
+      margin: 0 auto;
+      border-radius: 20px;
+      padding: 30px 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    h1 {
+      font-size: 26px;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .wheel-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .wheel {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: url('https://i.postimg.cc/9MXP9DJH/spin-wheel.png') no-repeat center center;
+      background-size: cover;
+      animation: spin 5s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .cta-btn {
+      display: inline-block;
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      color: white;
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 25px;
+      box-shadow: 0 4px 14px rgba(255, 75, 43, 0.5);
+      transition: 0.3s ease;
+    }
+    .cta-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(255, 75, 43, 0.6);
+    }
+    .footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Congratulations!</h1>
+    <p>You’ve been selected for an exclusive reward available in your area.</p>
+    <div class="wheel-container">
+      <div class="wheel"></div>
+    </div>
+    <p>Spin the wheel & unlock amazing rewards like iPhones, Gift Cards, and more!</p>
+    <a href="https://your-smartlink-url.com" class="cta-btn">CLAIM YOUR REWARD</a>
+    <div class="footer">
+      🔒 100% Secure | No Credit Card Required | Offers for 18+ Only
+    </div>
+  </div>
+</body>
+</html>
